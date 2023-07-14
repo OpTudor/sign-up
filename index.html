@@ -41,15 +41,28 @@
 
             <div class="form-item">
               <label for="password">Password</label>
-              <input id="password" name="password" type="password" />
+              <input
+                id="password"
+                name="password"
+                type="password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              />
             </div>
             <div class="form-item">
-              <label for="password">Confirm Password</label>
-              <input id="password" name="password" type=password" />
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                id="confirm-password"
+                name="confirm-password"
+                type="password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              />
+            </div>
+            <div id="button-container">
+              <button type="submit">Create Account</button>
             </div>
           </form>
         </div>
-        <div id="button-container">button</div>
+        <div id="login">Already have an account? <a href="#">Log In</a></div>
       </div>
     </div>
   </body>
